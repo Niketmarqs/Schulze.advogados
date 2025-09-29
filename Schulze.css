@@ -1,4 +1,6 @@
-/* Reset */
+/* ============================= */
+/* RESET                         */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,9 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* ============================= */
+/* HEADER                        */
+/* ============================= */
 header {
   background: #fff;
   padding: 20px 40px;
@@ -47,7 +51,9 @@ nav ul li a:hover {
   color: #0070e0;
 }
 
-/* HERO */
+/* ============================= */
+/* HERO                          */
+/* ============================= */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -90,7 +96,9 @@ nav ul li a:hover {
   transform: translateY(-3px);
 }
 
-/* SEÇÕES */
+/* ============================= */
+/* CONTEÚDO PADRÃO               */
+/* ============================= */
 .conteudo {
   background: #fff;
   margin: 60px auto;
@@ -112,7 +120,78 @@ nav ul li a:hover {
   margin: 0 auto 20px;
 }
 
-/* WhatsApp fixo */
+/* ============================= */
+/* SOLUÇÕES PERSONALIZADAS       */
+/* ============================= */
+.solucoes {
+  padding: 60px 20px;
+  background: #f1f5f9;
+}
+
+.solucoes h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.solucoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD DE SOLUÇÃO */
+.solucao-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #004080;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 2px solid #004080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.solucao-card:hover {
+  background: linear-gradient(135deg, #004080, #0070e0);
+  color: #fff;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 2px solid #fff;
+}
+
+/* IMAGEM DO CARD */
+.solucao-card img {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.solucao-card:hover img {
+  filter: brightness(0) invert(1);
+  transform: scale(1.15);
+}
+
+/* TEXTO DO CARD */
+.solucao-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+/* ============================= */
+/* BOTÃO FIXO WHATSAPP           */
+/* ============================= */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -129,13 +208,37 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: 0.3s;
   z-index: 1000;
+  font-weight: bold;
 }
 
 .whatsapp:hover {
   background: #1ebd5a;
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
 .zap-icon {
   width: 22px;
   height: 22px;
 }
+
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer img {
+  max-height: 60px;
+  margin-top: 15px;
+}
+/* ============================= */
