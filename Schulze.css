@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  max-height: 110px;   /* logo maior */
+  width: auto;
+  max-width: 95%;      /* impede que estoure no mobile */
+  margin-bottom: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;     /* quebra em telas pequenas */
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: 500;
+  font-size: 1.1rem;   /* links maiores */
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0070e0;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #004080, #0070e0);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Botões */
+.btn {
+  padding: 14px 28px;
+  background: #004080;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background: #0070e0;
+  transform: translateY(-3px);
+}
+
+/* SEÇÕES */
+.conteudo {
+  background: #fff;
+  margin: 60px auto;
+  padding: 40px 20px;
+  max-width: 900px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.conteudo h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #004080;
+}
+
+.conteudo p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+/* WhatsApp fixo */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp:hover {
+  background: #1ebd5a;
+}
+
+.zap-icon {
+  width: 22px;
+  height: 22px;
+}
